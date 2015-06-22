@@ -30,7 +30,7 @@ var credentials = extend({
   url : '<url>',
   username : '<username>',
   password : '<password>',
-}, bluemix.getServiceCreds('natural_language_classifier')); // VCAP_SERVICES
+}, bluemix.getServiceCreds('chinghua_first_classifier')); // VCAP_SERVICES
 
 // Create the service wrapper
 var nlClassifier = watson.natural_language_classifier(credentials);

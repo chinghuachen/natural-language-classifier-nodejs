@@ -1,6 +1,6 @@
 # Natural Language Classifier Nodejs Starter Application
 
-  Now that you have the demo app code, you can follow the instructions here to create a Classifier service instance to power your app. However, before you can get the app to respond to your questions, you will still need to obtain credentials for the service from Bluemix and then train the classifier (see step 8, below, for information on how to do this). 
+Follow the instructions here to create a Classifier service instance to power your app. However, before you can get the app to respond to your questions, you will still need to obtain credentials for the service from Bluemix and then train the classifier (see step 8, below, for information on how to do this). 
 
 ## Running on Bluemix
 

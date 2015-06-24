@@ -1,12 +1,12 @@
 # Natural Language Classifier Nodejs Starter Application
 
-Follow the instructions here to create a Classifier service instance to power your app. However, before you can get the app to respond to your questions, you will still need to obtain credentials for the service from Bluemix and then train the classifier (see step 8, below, for information on how to do this). 
+Follow the instructions here to create a Classifier service instance to power your app.
 
-## Running on Bluemix
+## Create a classifier instance
 
 1. You need a Bluemix account. If you don't have one, [sign up][sign_up]. Experimental Watson Services are free to use.
 
-1. Download and install the [Cloud-foundry CLI][cloud_foundry] tool if you haven't already.
+1. Download and install the [Cloud-foundry CLI][cloud_foundry] tool. This is required for communicating with the service on Bluemix.
 
 1. Edit the `manifest.yml` file and change `<application-name>` to something unique. The name you use determines the URL of your application. For example, `<application-name>.mybluemix.net`.
 	
@@ -35,21 +35,19 @@ Follow the instructions here to create a Classifier service instance to power yo
 
 1. Update the [app.js](app.js#L33) file with the classifier id in the response from the API when you create the classifier.
 
-1. Push your app to make it live:
+1. Make your service live:
 
 	```sh
 	$ cf push
 	```
 
-	For more details about developing applications that use Watson Developer Cloud services in Bluemix, see [Getting started with Watson Developer Cloud and Bluemix][getting_started].
-
-1. To get the app to respond to input, you need to obtain service credentials and train the Classifier. For instructions on how to do this, refer to our general documentation [here](https://watson.stage1.mybluemix.net/doc/nl-classifier/get_start.shtml).
+1. Your service is now live and your app is hosted at `<application-name>.mybluemix.net`. However, to get the service to respond to input, you need to obtain service credentials and train the Classifier. For instructions on how to do this, refer to our general documentation [here](https://watson.stage1.mybluemix.net/doc/nl-classifier/get_start.shtml).
 
 
 
 ## Running locally
 
-If you prefer to host your app locally, follow these steps after you have completed the steps above. Note that to run the Classifier service, your app will still need to be connected to Bluemix. 
+If you prefer to host your app locally, follow these steps after you have completed all of the above steps.
 
 1. Download and install [Node.js](http://nodejs.org/) and [npm](https://www.npmjs.com/).
 

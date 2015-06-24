@@ -1,6 +1,6 @@
 # Natural Language Classifier Nodejs Starter Application
 
-Follow the instructions here to create a Classifier service instance to power your app.
+Follow the instructions here to create a Classifier service instance on Bluemix. By default, the app will be hosted on Bluemix. If you prefer to host your app locally, additional instructions are provided.
 
 ## Create a classifier instance
 

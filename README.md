@@ -1,8 +1,8 @@
 # Natural Language Classifier Nodejs Starter Application
 
-Follow the instructions here to create a Classifier service instance on Bluemix. By default, the app will be hosted on Bluemix. If you prefer to host your app locally, additional instructions are provided.
+Follow the instructions here to create an app that is linked to a new NL Classifier service instance on Bluemix. By default, the app will be hosted on Bluemix. If you prefer to host your app locally, additional instructions are provided.
 
-## Create a classifier instance
+## Create a live app
 
 1. You need a Bluemix account. If you don't have one, [sign up][sign_up]. Experimental Watson Services are free to use.
 
@@ -35,7 +35,7 @@ Follow the instructions here to create a Classifier service instance on Bluemix.
 
 1. Update the [app.js](app.js#L33) file with the classifier id in the response from the API when you create the classifier.
 
-1. Make your service live:
+1. Push your app to make it live:
 
 	```sh
 	$ cf push

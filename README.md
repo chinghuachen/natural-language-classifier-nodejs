@@ -1,12 +1,10 @@
 # Natural Language Classifier Demo Application
 
-Follow the instructions here to create an app that is linked to a new NL Classifier service instance on Bluemix. By default, the app will be hosted on Bluemix. If you want to host your app locally, additional instructions are provided.
+You can choose to run your app on Bluemix, or locally.
 
-## Create a live app
+## Run your app on Bluemix
 
-1. You need a Bluemix account. If you don't have one, [sign up][sign_up]. Experimental Watson Services are free to use.
-
-1. Download and install the [Cloud-foundry CLI][cloud_foundry] tool. This is required for communicating with the service on Bluemix.
+1. [Create and train an instance of the Watson Natural Language Classifier](https://watson.stage1.mybluemix.net/doc/nl-classifier/get_start.shtml).
 
 1. Edit the `manifest.yml` file and change `<application-name>` to something unique. The name you use determines the URL of your application. For example, `<application-name>.mybluemix.net`.
 	
@@ -27,12 +25,6 @@ Follow the instructions here to create an app that is linked to a new NL Classif
 	$ cf login -u <your user ID>
 	```
 
-1. Create the Natural Language Classifier service in Bluemix.
-	
-	```sh
-	$ cf create-service natural_language_classifier free natural-language-classifier-service
-	```
-
 1. Update the [app.js](app.js#L33) file with the classifier id in the response from the API when you create the classifier.
 
 1. Push your app to make it live:
@@ -41,19 +33,17 @@ Follow the instructions here to create an app that is linked to a new NL Classif
 	$ cf push
 	```
 
-1. Your service is now live and your app is hosted at `<application-name>.mybluemix.net`. However, to get the service to respond to input, you need to obtain service credentials and train the Classifier. For instructions on how to do this, refer to our general documentation [here](https://watson.stage1.mybluemix.net/doc/nl-classifier/get_start.shtml).
+1. Your service is now live and your app is hosted at `<application-name>.mybluemix.net`.
 
 
 
-## Running locally
-
-If you prefer to host your app locally, follow these steps after you have completed all of the above steps.
+## Run your app locally
 
 1. Download and install [Node.js](http://nodejs.org/) and [npm](https://www.npmjs.com/).
 
 1. Configure the code to connect to your service:
 
-	1. Copy the credentials from your `natural-language-classifier-service` service in Bluemix. Run the following command:
+	1. Copy the credentials from your `natural-language-classifier-service` service. Run the following command:
 
 		```sh
 		$ cf env <application-name>
@@ -105,18 +95,10 @@ If you prefer to host your app locally, follow these steps after you have comple
 
 1. Point your browser to [http://localhost:3000](http://localhost:3000).
 
-1. Train the Classifier to get it to respond to your questions. For instructions on how to do this, refer to our general documentation [here](https://watson.stage1.mybluemix.net/doc/nl-classifier/get_start.shtml).
-
 
 ## Troubleshooting
 
-* The main source of troubleshooting and recovery information is the Bluemix log. To view the log, run the following command:
-
-  ```sh
-  $ cf logs <application-name> --recent
-  ```
-
-* For more details about the service, see the [documentation][nlc_docs] for the Natural Language Classifier.
+* See the [documentation][nlc_docs] for the Natural Language Classifier.
 
 ## License
 

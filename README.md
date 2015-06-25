@@ -39,6 +39,8 @@ You can choose to run your app on Bluemix, or locally.
 
 ## Run your app locally
 
+1. [Create and train an instance of the Watson Natural Language Classifier](https://watson.stage1.mybluemix.net/doc/nl-classifier/get_start.shtml).
+
 1. Download and install [Node.js](http://nodejs.org/) and [npm](https://www.npmjs.com/).
 
 1. Configure the code to connect to your service:
